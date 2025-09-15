@@ -1,7 +1,7 @@
 // NO CHANGES YET
 import java.util.Scanner;
 /*
-* @author YogeshK
+*  here i removed @author Yogesh
 */
 class HDFCBankApplication{
 
