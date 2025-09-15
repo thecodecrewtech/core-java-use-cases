@@ -6,16 +6,16 @@ import java.util.Scanner;
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 9876;
+	private int PIN = 7009;
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
 		HDFCBankApplication application = new HDFCBankApplication();
 		
-		System.out.println("Enter salary ");
+		System.out.println("Enter your salary ");
 		double salary = scanner.nextDouble();
 		
-		System.out.println("Enter min balance");
+		System.out.println("Enter minimum balance");
 		double minBal = scanner.nextDouble();
 		
 		boolean isCustomerEligible =  application.isCustomerEligibleForLoan(salary, minBal);
@@ -76,21 +76,23 @@ class HDFCBankApplication{
 	}
 	/*
 	*  	After successful login, display the following menu: 
-	*	o 1. Check Balance   
-	*	o 2. Deposit Money   
-	*	o 3. Withdraw Money   
-	*	o 4. Exit   
-	*	o Perform the respective operations based on the customer’s choice. 
-	*	o Ensure sufficient balance checks during withdrawal. 
-	*	o Exit the application when the user chooses option 4. 
+	*	 1. Check Balance   
+	*	 2. Deposit Money   
+	*	 3. Withdraw Money   
+	*	 4. Exit   
+	*	 Perform the respective operations based on the customer’s choice. 
+	*	 Ensure sufficient balance checks during withdrawal. 
+	*	 Exit the application when the user chooses option 4. 
 	*/
 	public boolean displayMenu(){
 		while (true){
+			System.out.println("-----------------------------------");
 			System.out.println("Select From menu");
 			System.out.println("1. Check Balance");
 			System.out.println("2. Deposit Money");
 			System.out.println("3. Withdraw Money");
 			System.out.println("4. Exit");
+			System.out.println("-----------------------------------");
 			
 			System.out.println("Enter your choice -");
 			int choice = scanner.nextInt();
