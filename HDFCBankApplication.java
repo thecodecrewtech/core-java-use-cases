@@ -1,10 +1,12 @@
-
+/*
+Hello Every One I try to learn Java
+*/
 import java.util.Scanner;
 
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 9876;
+	private int PIN = 12345;
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
