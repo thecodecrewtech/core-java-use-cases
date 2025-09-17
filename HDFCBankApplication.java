@@ -8,7 +8,7 @@ import java.util.Scanner;
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 53765;
+
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
@@ -33,6 +33,7 @@ class HDFCBankApplication{
 	}
 	
 	
+<
 	public boolean isCustomerEligibleForLoan(double salary, double minBal){
 		
 		if(salary > 30000 && minBal >= 20000){
