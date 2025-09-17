@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-//*shalini @*//
+
 class HDFCBankApplication{
 
 	private static Scanner scanner;
@@ -28,12 +28,7 @@ class HDFCBankApplication{
 	
 	}
 	
-	/*
-	* 	Check whether a customer is eligible for a loan based on: 
-	*		 Minimum balance of ₹20,000. 
-	*		 Salary greater than ₹30,000. 
-	*	Display appropriate messages for eligibility or rejection.
-	*/
+
 	public boolean isCustomerEligibleForLoan(double salary, double minBal){
 		
 		if(salary > 30000 && minBal >= 20000){
