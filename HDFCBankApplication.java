@@ -8,7 +8,7 @@ import java.util.Scanner;
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 53765;
+
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
