@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
+
 /*
 *  here i removed @author Yogesh
 */
+
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 7009;
+	private int PIN = 53765;
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
@@ -88,7 +90,7 @@ class HDFCBankApplication{
 			System.out.println("3. Withdraw Money");
 			System.out.println("4. Exit");
 			System.out.println("-----------------------------------");
-			
+			system.out.println("----------------------------------");
 			System.out.println("Enter your choice -");
 			int choice = scanner.nextInt();
 			
