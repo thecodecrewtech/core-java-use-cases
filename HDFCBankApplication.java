@@ -1,12 +1,10 @@
-/*
-Hello Every One I try to learn Java
-*/
+
 import java.util.Scanner;
 
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 12345;
+	private int PIN = 65432;
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
@@ -30,12 +28,8 @@ class HDFCBankApplication{
 	
 	}
 	
-	/*
-	* 	Check whether a customer is eligible for a loan based on: 
-	*		 Minimum balance of ₹20,000. 
-	*		 Salary greater than ₹30,000. 
-	*	Display appropriate messages for eligibility or rejection.
-	*/
+	
+
 	public boolean isCustomerEligibleForLoan(double salary, double minBal){
 		
 		if(salary > 30000 && minBal >= 20000){
