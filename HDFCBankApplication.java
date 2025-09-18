@@ -1,19 +1,23 @@
-
 import java.util.Scanner;
+
+
+/*
+*  here i removed @author Yogesh
+*/
 
 class HDFCBankApplication{
 
 	private static Scanner scanner;
-	private int PIN = 9876;
+
 
 	public static void main(String [] args){
 		scanner = new Scanner(System.in);
 		HDFCBankApplication application = new HDFCBankApplication();
 		
-		System.out.println("Enter salary ");
+		System.out.println("Enter your salary ");
 		double salary = scanner.nextDouble();
 		
-		System.out.println("Enter min balance");
+		System.out.println("Enter minimum balance");
 		double minBal = scanner.nextDouble();
 		
 		boolean isCustomerEligible =  application.isCustomerEligibleForLoan(salary, minBal);
@@ -28,12 +32,7 @@ class HDFCBankApplication{
 	
 	}
 	
-	/*
-	* 	Check whether a customer is eligible for a loan based on: 
-	*		 Minimum balance of ₹20,000. 
-	*		 Salary greater than ₹30,000. 
-	*	Display appropriate messages for eligibility or rejection.
-	*/
+
 	public boolean isCustomerEligibleForLoan(double salary, double minBal){
 		
 		if(salary > 30000 && minBal >= 20000){
@@ -43,8 +42,9 @@ class HDFCBankApplication{
 		}
 	}
 	
+	
 	/*
-	*   Allow the customer a maximum of 3 attempts to enter the correct 
+	*   Allow the customer a maximum of 6 attempts to enter the correct 
 	*	ATM PIN. 
 	*	If the PIN is correct, allow access to the banking menu. 
 	*   If incorrect after 3 attempts, block the card and display a warning 
@@ -54,7 +54,7 @@ class HDFCBankApplication{
 		
 		int count = 1;
 		
-		while(count <= 3){
+		while(count <= 6){
 			System.out.print("Enter pin - ");
 			int userPin = scanner.nextInt();
 			
@@ -67,29 +67,32 @@ class HDFCBankApplication{
 			}
 		}
 		
-		if(count > 3){
+		if(count > 6){
 			System.out.println("You have exceeded maximum PIN attempts. Account locked!");
 		}
 		return false;
 	}
+	
 	/*
 	*  	After successful login, display the following menu: 
-	*	o 1. Check Balance   
-	*	o 2. Deposit Money   
-	*	o 3. Withdraw Money   
-	*	o 4. Exit   
-	*	o Perform the respective operations based on the customer’s choice. 
-	*	o Ensure sufficient balance checks during withdrawal. 
-	*	o Exit the application when the user chooses option 4. 
+	*	 1. Check Balance   
+	*	 2. Deposit Money   
+	*	 3. Withdraw Money   
+	*	 4. Exit   
+	*	 Perform the respective operations based on the customer’s choice. 
+	*	 Ensure sufficient balance checks during withdrawal. 
+	*	 Exit the application when the user chooses option 4. 
 	*/
 	public boolean displayMenu(){
 		while (true){
+			System.out.println("-----------------------------------");
 			System.out.println("Select From menu");
 			System.out.println("1. Check Balance");
 			System.out.println("2. Deposit Money");
 			System.out.println("3. Withdraw Money");
 			System.out.println("4. Exit");
-			
+			System.out.println("-----------------------------------");
+			system.out.println("----------------------------------");
 			System.out.println("Enter your choice -");
 			int choice = scanner.nextInt();
 			
